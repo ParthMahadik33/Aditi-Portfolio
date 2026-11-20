@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume — Jishnu Mondal</title>
+  <title>Resume — Aditi Raut</title>
   <link rel="stylesheet" href="./Gsap X Webflow_files/gsap-webflow-offbrand.webflow.shared.1d2cc8aa4.min.css">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <style>
     :root {
       --bg: #ffe9cf;
       --primary: #270f03;
       --accent: #ffe600;
+      --coral: #FF5555;
+      --blue: #3d77ff;
+      --card-bg: #FFFDF9;
     }
     * {
       box-sizing: border-box;
@@ -19,77 +23,243 @@
     body {
       background-color: var(--bg);
       color: var(--primary);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
-      text-align: center;
+      padding: 2.5rem 1.25rem;
+      text-align: left;
     }
     .resume-card {
-      background: #ffffff;
-      border: 3.5px solid #000000;
-      box-shadow: 8px 8px 0px #000000;
-      padding: 3rem 4rem;
-      max-width: 680px;
+      background: var(--card-bg);
+      border: 3.5px solid var(--primary);
+      box-shadow: 8px 8px 0px var(--primary);
+      border-radius: 20px;
+      padding: 3rem 2.8rem;
+      max-width: 760px;
       width: 100%;
+    }
+    .badge-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 1.5rem;
     }
     .badge {
       display: inline-block;
-      background: #0d0d0d;
-      color: var(--accent);
-      font-weight: 900;
-      letter-spacing: 0.08em;
+      background: var(--accent);
+      color: var(--primary);
+      font-weight: 800;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
-      padding: 0.4rem 1.2rem;
-      border: 2px solid #000000;
-      margin-bottom: 1.5rem;
-      font-size: 0.9rem;
+      padding: 0.35rem 1rem;
+      border: 2px solid var(--primary);
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+    .status-badge {
+      display: inline-block;
+      background: rgba(34, 197, 94, 0.16);
+      color: #0c8000;
+      font-weight: 700;
+      border: 1.5px solid #22c55e;
+      border-radius: 999px;
+      padding: 0.35rem 0.95rem;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
     }
     h1 {
-      font-size: clamp(2.2rem, 5vw, 3.8rem);
-      font-weight: 900;
-      letter-spacing: -0.04em;
-      line-height: 1.05;
-      margin-bottom: 0.75rem;
+      font-family: 'Anton', Impact, Arial, sans-serif;
+      font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+      letter-spacing: 0.03em;
+      line-height: 1;
+      margin-bottom: 0.4rem;
       text-transform: uppercase;
+      color: var(--primary);
     }
-    p {
-      font-size: 1.15rem;
+    .subtitle {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .bio {
+      font-size: 1.02rem;
       line-height: 1.6;
-      color: #555555;
-      margin-bottom: 2rem;
+      color: rgba(39, 15, 3, 0.88);
+      margin-bottom: 1.8rem;
     }
-    .btn-back {
+    .sec-block {
+      border-top: 2px dashed rgba(39, 15, 3, 0.2);
+      padding-top: 1.4rem;
+      margin-top: 1.4rem;
+    }
+    .sec-title {
+      font-family: 'Anton', Impact, Arial, sans-serif;
+      font-size: 1.35rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+    .edu-item, .proj-item {
+      margin-bottom: 0.9rem;
+    }
+    .edu-head, .proj-head {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--primary);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .edu-sub {
+      font-size: 0.92rem;
+      color: rgba(39, 15, 3, 0.75);
+    }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+    .skill-pill {
+      background: rgba(39, 15, 3, 0.06);
+      border: 1.5px solid rgba(39, 15, 3, 0.2);
+      border-radius: 8px;
+      padding: 4px 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .action-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 2.2rem;
+      padding-top: 1.5rem;
+      border-top: 2.5px solid var(--primary);
+    }
+    .btn-action {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
       background: var(--accent);
-      color: #000000;
+      color: var(--primary);
       font-weight: 800;
       text-decoration: none;
-      padding: 0.8rem 1.8rem;
-      border: 3px solid #000000;
-      box-shadow: 4px 4px 0px #000000;
+      padding: 0.75rem 1.6rem;
+      border: 2.5px solid var(--primary);
+      box-shadow: 4px 4px 0px var(--primary);
+      border-radius: 999px;
       transition: transform 0.15s ease, box-shadow 0.15s ease;
       text-transform: uppercase;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.03em;
+      font-size: 0.88rem;
     }
-    .btn-back:hover {
+    .btn-action:hover {
       transform: translate(-2px, -2px);
-      box-shadow: 6px 6px 0px #000000;
+      box-shadow: 6px 6px 0px var(--primary);
+    }
+    .btn-action.secondary {
+      background: #ffffff;
+    }
+    @media (max-width: 600px) {
+      .resume-card {
+        padding: 2rem 1.4rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="resume-card">
-    <div class="badge">Curriculum Vitae</div>
-    <h1>Jishnu Mondal</h1>
-    <p>Full Stack Creative Engineer & Designer.<br>Resume page is currently being structured.</p>
-    <a href="index.html" class="btn-back">← Back to Portfolio</a>
+    <div class="badge-wrap">
+      <span class="badge">Curriculum Vitae</span>
+      <span class="status-badge">● Seeking Internship</span>
+    </div>
+
+    <h1>Aditi Raut</h1>
+    <div class="subtitle">Data Analyst &amp; Web Developer</div>
+    <p class="bio">
+      Exploring the intersection of data analytics and web development, with a passion for transforming raw data into meaningful insights and building intuitive digital experiences. Skilled in data visualization, analytical thinking, and developing practical solutions through technology.
+    </p>
+
+    <!-- EDUCATION -->
+    <div class="sec-block">
+      <div class="sec-title">Education</div>
+      <div class="edu-item">
+        <div class="edu-head">
+          <span>B.Sc. in Computer Science</span>
+          <span style="color:rgba(39,15,3,0.65); font-size:0.9rem;">2024 — 2027</span>
+        </div>
+        <div class="edu-sub">Karmaveer Bhaurao Patil (KBP) College, Vashi • Final Year 2027</div>
+      </div>
+    </div>
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="sec-block">
+      <div class="sec-title">Technical Toolkit</div>
+      <div class="skills-grid">
+        <span class="skill-pill">Power BI</span>
+        <span class="skill-pill">Microsoft Excel</span>
+        <span class="skill-pill">SQL</span>
+        <span class="skill-pill">MySQL</span>
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">Pandas</span>
+        <span class="skill-pill">NumPy</span>
+        <span class="skill-pill">Matplotlib</span>
+        <span class="skill-pill">Data Visualization</span>
+        <span class="skill-pill">HTML5</span>
+        <span class="skill-pill">CSS3</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">React.js</span>
+        <span class="skill-pill">Git &amp; GitHub</span>
+        <span class="skill-pill">VS Code</span>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="sec-block">
+      <div class="sec-title">Featured Projects</div>
+      <div class="proj-item">
+        <div class="proj-head">
+          <span>CLUEZY — AI-Powered Technical Problem Solving Platform</span>
+          <a href="https://cluezy-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" style="color:var(--blue); text-decoration:none; font-size:0.85rem;">Live Demo ↗</a>
+        </div>
+        <div class="edu-sub">Python, FastAPI, JavaScript, AI / LLM, Vercel • GitHub: aditi714/CLUEZY</div>
+      </div>
+      <div class="proj-item" style="margin-top:0.6rem;">
+        <div class="proj-head">
+          <span>AgroRent — Farm Machinery Rental Platform</span>
+          <a href="https://agrorent-v3.onrender.com/" target="_blank" rel="noopener noreferrer" style="color:var(--blue); text-decoration:none; font-size:0.85rem;">Live Demo ↗</a>
+        </div>
+        <div class="edu-sub">Python, Flask, Gemini AI, WhatsApp API, Razorpay, Render • GitHub: ParthMahadik33/AgroRent-v3</div>
+      </div>
+    </div>
+
+    <!-- CONTACT / LOCATION -->
+    <div class="sec-block">
+      <div class="sec-title">Contact &amp; Location</div>
+      <div class="edu-sub" style="font-size:0.95rem; line-height:1.6;">
+        📍 <strong>Location</strong>: Navi Mumbai, Mumbai &amp; Remote<br>
+        ✉ <strong>Email</strong>: <a href="mailto:aditi.raut.dev@gmail.com" style="color:inherit;">aditi.raut.dev@gmail.com</a><br>
+        🔗 <strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/aditi-raut-735292380" target="_blank" rel="noopener noreferrer" style="color:inherit;">linkedin.com/in/aditi-raut-735292380 ↗</a><br>
+        💻 <strong>GitHub</strong>: <a href="https://github.com/aditi714" target="_blank" rel="noopener noreferrer" style="color:inherit;">github.com/aditi714 ↗</a>
+      </div>
+    </div>
+
+    <div class="action-row">
+      <a href="index.html" class="btn-action">← Back to Portfolio</a>
+      <a href="https://www.linkedin.com/in/aditi-raut-735292380" target="_blank" rel="noopener noreferrer" class="btn-action secondary">Connect on LinkedIn ↗</a>
+    </div>
   </div>
 </body>
 </html>
-

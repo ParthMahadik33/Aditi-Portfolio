@@ -1,88 +1,65 @@
-# Dynamic Full Stack Developer Portfolio & GSAP Showcase
+# Aditi Raut — Data Analyst & Web Developer Portfolio
 
-This repository contains:
-1. **The Exact Same Original Website** (`original.html`) — Pristine, fully self-contained recreation of the *GSAP x Webflow* interactive showcase by Off Brand.
-2. **The Converted Full Stack Developer Portfolio** (`index.html`) — The exact same website transformed into a modern, high-performance portfolio for a Full Stack Developer & System Architect (using default name **Jishnu Mondal**).
+An interactive, high-performance portfolio website built for **Aditi Raut** using **GSAP 3** animations, **Lenis** smooth scrolling, and custom neo-brutalist aesthetics.
 
 ---
 
-## 🚀 Quick Start / How to Run
+## 👩‍💻 Profile Overview
 
-You can open either file directly in any modern browser:
+- **Name**: Aditi Raut
+- **Role**: Data Analyst & Web Developer
+- **Education**: B.Sc. in Computer Science • Karmaveer Bhaurao Patil (KBP) College, Vashi (2024 — 2027)
+- **Focus**: Turning raw data into meaningful insights & building intuitive web experiences
+- **Location**: Navi Mumbai, Mumbai & Remote
+- **Profiles**: [GitHub](https://github.com/aditi714) • [LinkedIn](https://www.linkedin.com/in/aditi-raut-735292380)
 
-- **Portfolio Website (Default Entrypoint)**: Open [`index.html`](file:///Users/jishnu9/Web%20Dev%20Files/Dynamic%20Portfolio%20Website/index.html)
-- **Original GSAP x Webflow Showcase**: Open [`original.html`](file:///Users/jishnu9/Web%20Dev%20Files/Dynamic%20Portfolio%20Website/original.html)
+---
 
-Or run a local static server:
+## 🚀 Sections & Features
+
+1. **Section 1: Hero & Top Navigation**
+   - **Branding & Status**: Dynamic navbar with `DATA ANALYST & WEB DEVELOPER` glowing badge.
+   - **Rotating Animated Headlines**: Cycles smoothly across 3 core mantras:
+     - `TURNING DATA INTO INSIGHTS.`
+     - `ANALYZING TRENDS. BUILDING SOLUTIONS.`
+     - `WHERE DATA MEETS DEVELOPMENT.`
+   - **Kinetic Tech Stack Strips**: 7 looping background strips with 16 vector tech icons (**Power BI**, Python, SQL, Pandas, Microsoft Excel, NumPy, Data Visualization, Matplotlib, MySQL, React.js, JavaScript, HTML5, CSS3, Git, GitHub, VS Code).
+   - **Interactive Overview**: Bio and interactive live state indicators.
+
+2. **Section 2: Selected Projects (`#flip`)**
+   - **CLUEZY**: AI-Powered Technical Problem Solving Platform (FastAPI, JavaScript, Vercel, REST API).
+   - **AgroRent**: Farm Machinery Rental Marketplace (Python, Flask, Gemini AI, WhatsApp API, Razorpay, Render).
+   - **Interactions**: 3D fly-in with center-slit reveal, counter-motion zooms, hover pop-out action buttons (*Visit Site ↗* and *GitHub ↗*), and comprehensive README summary cards with tech tags.
+
+3. **Section 3: My Journey (Winding Road Roadmap)**
+   - Pinned interactive SVG road canvas with moving glowing indicator.
+   - Chronological milestones tracking Aditi's journey from early foundations to B.Sc. CS at KBP College, Vashi, deep dives into Data Analysis & Web Development, featured project milestones, and active internship search.
+
+4. **Section 4: Services Track ("What I Can Do For You")**
+   - Pinned scroll-scrub cards with custom neo-brutalist comic graphics:
+     1. **Data Analytics & BI Dashboards** (Power BI, KPI tracking, reporting)
+     2. **SQL & Database Querying** (MySQL, data modeling, complex queries)
+     3. **Exploratory Data Analysis** (Python, Pandas, NumPy, Matplotlib)
+     4. **Responsive Web Development** (HTML5, CSS3, JavaScript, React)
+     5. **Interactive Data Portals** (Web dashboards, embeddable charts)
+
+5. **Section 5: Editorial Contact & Connect**
+   - Interactive mascot eye-tracking card.
+   - One-click neo-brutalist contact cards:
+     - **LinkedIn**: [linkedin.com/in/aditi-raut-735292380](https://www.linkedin.com/in/aditi-raut-735292380)
+     - **GitHub**: [github.com/aditi714](https://github.com/aditi714)
+     - **Email**: `aditi.raut.dev@gmail.com`
+     - **Location**: Navi Mumbai, Mumbai & Remote
+   - Dedicated Curriculum Vitae page: [`resume.html`](./resume.html)
+
+---
+
+## 🏃‍♂️ How to Run Locally
+
+Run a local Python static server in this folder:
 ```bash
-python3 -m http.server 8000
+python -m http.server 8000
 ```
-Then visit:
-- Portfolio: `http://localhost:8000/` or `http://localhost:8000/index.html`
-- Original Site: `http://localhost:8000/original.html`
-
-> **Note**: Both pages include a sleek floating switcher badge in the top-right corner allowing 1-click toggling between the **Original GSAP Showcase** and the **Full Stack Developer Portfolio**.
-
----
-
-## 🛠 What Was Done
-
-### Phase 1: In-Depth Analysis of the Workspace Files
-The source files consisted of `Gsap X Webflow.html` and the `Gsap X Webflow_files` asset directory containing:
-- **GSAP Animation Suite**: Core GSAP, ScrollTrigger, SplitText, ScrollSmoother, Flip, ScrollToPlugin, InertiaPlugin, ScrambleTextPlugin, Observer, Draggable, MotionPathPlugin, MotionPathHelper.
-- **Smooth Scroll**: Lenis smooth scroll engine synced to GSAP ticker.
-- **31 Visual Assets**: High-resolution AVIF cutouts, layered shadow passes, sky textures, runner sequences, and typography SVGs.
-- **Issue Discovered**: The raw HTML was serialized from a live Chrome browser session, containing:
-  - 113 DOM nodes with stale `aria-hidden="true"` generated mid-animation by SplitText.
-  - Browser extension debris (`#volume-booster-visusalizer`, hidden textareas, audio outputs).
-  - Remotely linked fonts and remote videos that would stall if offline.
-  - Dynamic overlay proxies injected by Draggable that caused duplicate items in 3D perspective carousels.
-
-### Phase 2: Pristine Recreation of the Original Website (`original.html`)
-- **Offline Self-Containment**: Downloaded `WorkSans` (Regular, Medium, SemiBold) and `Anton-Regular` woff2 fonts locally into `Gsap X Webflow_files/`, with Google Fonts fallback.
-- **Local Video Integration**: Downloaded the high-res `running.mp4` video locally into `Gsap X Webflow_files/`.
-- **DOM Sanitization**: Reconstructed pure string nodes for all SplitText targets (`hero` title, `par` subtext, buttons, `videogrow` title, and text effects triggers).
-- **Inertia & Slider Fixes**: Removed stale draggable overlay proxies and reset slide states so 3D cylinder and loop slider calculations run smoothly on startup.
-- **Navigation Bar**: Section selector powered by GSAP `Flip` to glide the highlight indicator between tabs (`Flip`, `Scroll Trigger`, `Slider`, `Inertia`, `Text Effects`, `Marquee`).
-
-### Phase 3: Conversion to a Full Stack Developer Portfolio (`index.html`)
-The website was converted section-by-section to represent a top-tier Full Stack Developer and System Architect portfolio (default identity: **Jishnu Mondal**):
-
-| Section | Original Feature | Converted Full Stack Portfolio Feature |
-| :--- | :--- | :--- |
-| **Top Nav** | Webflow x GSAP Branding | **Jishnu Mondal // Full Stack Dev** badge, live availability indicator & section tabs |
-| **Hero (`#hero`)** | "MAKE IT MEAN MORE WITH GSAP" | **"BUILDING FULL STACK DIGITAL EXPERIENCES"** with split-character animation, interactive overview/architecture toggle, and tech stack motion stripes |
-| **Stack (`#flip`)** | Grid/List animation toggle (Hover, Resize, Timeline) | **Tech Stack & System Domains** (Frontend, Backend, Databases, Cloud & DevOps, Real-Time Streams, Security & Performance) with GSAP `Flip` transition |
-| **Architecture (`#scrolltrigger`)** | Pinned media grow animation | **"SYSTEM ARCHITECTURE"** — High-throughput distributed telemetry showcase scaling from card to full-screen view |
-| **Projects (`#slider`)** | Infinite horizontal loop cards | **Production Projects Showcase**: Nexus AI Platform, Pulse Telemetry, DevFlow Cloud IDE, HyperSync DB, Aether Commerce |
-| **Experience (`#inertia`)** | 3D draggable inertia cylinder | **8+ Years Career Timeline & Milestones**: Interactive 3D draggable cylinder with realistic inertia deceleration |
-| **Principles (`#text`)** | Interactive text effect triggers | **Engineering Principles Playground**: Pixel Precision, Clean Architecture, System Resilience, Developer Ergonomics, Edge Performance, User-Centric Focus |
-| **Ecosystem (`#marquee`)** | Dual-direction scroll marquee | **Full Stack Technology Ecosystem Marquee**: Continuous dual-flow banner of modern languages, cloud platforms, and tooling |
-| **Footer** | Animated SVG logo & templates copy | **"Let's Build Something Extraordinary"**: Animated signature SVG, interactive contact bar (Email, GitHub, LinkedIn), and smooth Back-to-Top scroll |
-
----
-
-## 📂 File Architecture
-```
-Dynamic Portfolio Website/
-├── index.html                   # Converted Full Stack Developer Portfolio (Jishnu Mondal)
-├── original.html                # Exact identical recreation of the original GSAP showcase
-├── Gsap X Webflow.html          # Original unmodified browser-saved HTML
-├── Gsap X Webflow_files/        # All local styles, scripts, fonts, images, and video
-│   ├── gsap.min.js              # GSAP Core
-│   ├── ScrollTrigger.min.js     # ScrollTrigger plugin
-│   ├── SplitText.min.js         # SplitText plugin
-│   ├── Flip.min.js              # Flip plugin
-│   ├── InertiaPlugin.min.js     # InertiaPlugin
-│   ├── Draggable.min.js         # Draggable plugin
-│   ├── ScrambleTextPlugin.min.js# ScrambleText plugin
-│   ├── lenis.min.js             # Lenis smooth scroll
-│   ├── Anton-Regular.woff2      # Local Anton heading font
-│   ├── WorkSans-*.woff2         # Local Work Sans body fonts
-│   ├── running.mp4              # Local video asset
-│   └── *.avif                   # Cutouts, textures, and illustration passes
-├── build_portfolio.py           # Generator script for portfolio adaptation
-├── update_portfolio.py          # Refinement and interactive copy handler script
-└── README.md                    # Project documentation
-```
-
+Then visit in any browser:
+- Main Portfolio: `http://localhost:8000/` or `http://localhost:8000/index.html`
+- Resume Page: `http://localhost:8000/resume.html`

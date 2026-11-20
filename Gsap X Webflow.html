@@ -71,19 +71,19 @@
     }
 </style>
   <link href="https://cdn.prod.website-files.com/" rel="preconnect" crossorigin="anonymous">
-  <title>Jishnu Mondal — Full Stack Developer & System Architect</title>
+  <title>Aditi Raut — Data Analyst & Web Developer</title>
   <meta
-    content="Portfolio of Jishnu Mondal — Full Stack Developer & System Architect. Building scalable distributed systems, cloud architectures, and fluid interactive web applications."
+    content="Portfolio of Aditi Raut — Data Analyst & Web Developer. Exploring the intersection of data analytics and web development, with a passion for transforming raw data into meaningful insights and building intuitive digital experiences."
     name="description">
-  <meta content="Jishnu Mondal — Full Stack Developer & System Architect" property="og:title">
+  <meta content="Aditi Raut — Data Analyst & Web Developer" property="og:title">
   <meta
-    content="Portfolio of Jishnu Mondal — Full Stack Developer & System Architect. Building scalable distributed systems, cloud architectures, and fluid interactive web applications."
+    content="Portfolio of Aditi Raut — Data Analyst & Web Developer. Exploring the intersection of data analytics and web development, with a passion for transforming raw data into meaningful insights and building intuitive digital experiences."
     property="og:description">
   <meta content="./assets/og-image.png"
     property="og:image">
-  <meta content="Jishnu Mondal — Full Stack Developer & System Architect" name="twitter:title">
+  <meta content="Aditi Raut — Data Analyst & Web Developer" name="twitter:title">
   <meta
-    content="Portfolio of Jishnu Mondal — Full Stack Developer & System Architect. Building scalable distributed systems, cloud architectures, and fluid interactive web applications."
+    content="Portfolio of Aditi Raut — Data Analyst & Web Developer. Exploring the intersection of data analytics and web development, with a passion for transforming raw data into meaningful insights and building intuitive digital experiences."
     name="twitter:description">
   <meta content="./assets/og-image.png"
     name="twitter:image">
@@ -701,7 +701,7 @@
 
         /* ==========================================================================
    NAVIGATION: TWO SEPARATE SECTIONS (HERO ONLY)
-   Section 1: Top Brand Header [JISHNU MONDAL FULL STACK DEV]
+   Section 1: Top Brand Header [ADITI RAUT DATA ANALYST & WEB DEVELOPER]
    Section 2: Secondary Section Pill Nav [Architecture, Projects, ...]
    ========================================================================== */
 .nav-w {
@@ -1221,6 +1221,187 @@
       }
     }
 
+    
+    /* Project Action Buttons Group (Visit + GitHub popouts) */
+    #flip .flip-actions-w {
+      position: absolute !important;
+      top: 50% !important;
+      right: 0 !important;
+      z-index: 1 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 10px !important;
+      transform: translateY(-50%) translateX(0) !important;
+      pointer-events: none !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+      transition: transform 0.48s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  opacity 0.35s ease,
+                  visibility 0.35s ease !important;
+    }
+
+    #flip .flip-card-container:hover .flip-actions-w {
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+      transform: translateY(-50%) translateX(calc(100% + 18px)) !important;
+    }
+
+    #flip .flip-actions-w .flip-visit-btn {
+      position: static !important;
+      transform: none !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+    }
+
+    #flip .flip-github-btn {
+      background-color: #1f2328 !important;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    #flip .flip-github-btn:hover {
+      background-color: #0d1117 !important;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 6px 14px rgba(0, 0, 0, 0.25) !important;
+      transform: scale(1.04) !important;
+    }
+
+    /* Neo-brutalist Project Description & Details Card */
+    #flip .flip-desc-card {
+      margin-top: 1.15rem !important;
+      background: #FFFDF9 !important;
+      border: 2.5px solid #270f03 !important;
+      border-radius: 14px !important;
+      box-shadow: 5px 5px 0px #270f03 !important;
+      padding: 1.35rem 1.5rem !important;
+      color: #270f03 !important;
+      position: relative !important;
+      z-index: 2 !important;
+      transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+    }
+
+    #flip .flip-project-li:hover .flip-desc-card {
+      box-shadow: 7px 7px 0px #270f03 !important;
+      transform: translateY(-2px) !important;
+    }
+
+    #flip .flip-desc-header {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+      gap: 10px !important;
+      margin-bottom: 0.75rem !important;
+    }
+
+    #flip .flip-desc-title-group {
+      display: flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+    }
+
+    #flip .flip-desc-title {
+      margin: 0 !important;
+      font-family: 'Anton', Impact, Arial, sans-serif !important;
+      font-size: 1.65rem !important;
+      letter-spacing: 0.04em !important;
+      color: #270f03 !important;
+      text-transform: uppercase !important;
+      line-height: 1 !important;
+    }
+
+    #flip .flip-desc-badge {
+      font-family: 'Work Sans', sans-serif !important;
+      font-size: 10.5px !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.05em !important;
+      padding: 3px 9px !important;
+      border-radius: 999px !important;
+      border: 1.5px solid #270f03 !important;
+      background: rgba(16, 205, 0, 0.16) !important;
+      color: #0c8000 !important;
+    }
+
+    #flip .flip-desc-badge.award {
+      background: #FFE500 !important;
+      color: #270f03 !important;
+    }
+
+    #flip .flip-desc-links {
+      display: flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+    }
+
+    #flip .flip-mini-link {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 5px !important;
+      font-family: 'Work Sans', sans-serif !important;
+      font-size: 11.5px !important;
+      font-weight: 700 !important;
+      text-decoration: none !important;
+      padding: 4px 10px !important;
+      border-radius: 999px !important;
+      border: 1.5px solid #270f03 !important;
+      transition: transform 0.18s ease, background 0.18s ease !important;
+    }
+
+    #flip .flip-mini-link.live {
+      background: #3d77ff !important;
+      color: #ffffff !important;
+    }
+
+    #flip .flip-mini-link.live:hover {
+      background: #205eff !important;
+      transform: translateY(-1px) scale(1.03) !important;
+    }
+
+    #flip .flip-mini-link.github {
+      background: #270f03 !important;
+      color: #ffffff !important;
+    }
+
+    #flip .flip-mini-link.github:hover {
+      background: #000000 !important;
+      transform: translateY(-1px) scale(1.03) !important;
+    }
+
+    #flip .flip-desc-text {
+      font-family: 'Work Sans', sans-serif !important;
+      font-size: 13.5px !important;
+      line-height: 1.55 !important;
+      color: rgba(39, 15, 3, 0.88) !important;
+      margin: 0 0 0.95rem 0 !important;
+    }
+
+    #flip .flip-tech-tags {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 6px !important;
+    }
+
+    #flip .flip-tech-tag {
+      font-family: 'Work Sans', sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 600 !important;
+      padding: 2.5px 8.5px !important;
+      border-radius: 6px !important;
+      border: 1px solid rgba(39, 15, 3, 0.2) !important;
+      background: rgba(39, 15, 3, 0.05) !important;
+      color: #270f03 !important;
+    }
+
+    @media screen and (max-width: 991px) {
+      #flip .flip-card-container:hover .flip-actions-w {
+        top: -16px !important;
+        right: 0 !important;
+        flex-direction: row !important;
+        transform: translateY(-100%) translateX(0) !important;
+      }
+    }
+
     @media screen and (max-width: 767px) {
       .flower-about-heading {
         font-size: clamp(3rem, 11vw, 5.5rem);
@@ -1401,11 +1582,10 @@
       <div class="logo-banner-w" style="display:flex; align-items:center; gap:16px;">
         <a href="#hero" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
           <span
-            style="font-family:'Anton',sans-serif; font-size:22px; letter-spacing:0.04em; color:currentColor; text-transform:uppercase;">JISHNU
-            MONDAL</span>
+            style="font-family:'Anton',sans-serif; font-size:22px; letter-spacing:0.04em; color:currentColor; text-transform:uppercase;">ADITI
+            RAUT</span>
           <span
-            style="font-family:'Worksans',sans-serif; font-size:10px; font-weight:600; padding:3px 8px; border-radius:99px; background:rgba(16,205,0,0.18); border:1px solid rgba(16,205,0,0.35); color:#10CD00; letter-spacing:0.06em; text-transform:uppercase;">FULL
-            STACK DEV</span>
+            style="font-family:'Worksans',sans-serif; font-size:10px; font-weight:600; padding:3px 8px; border-radius:99px; background:rgba(16,205,0,0.18); border:1px solid rgba(16,205,0,0.35); color:#10CD00; letter-spacing:0.06em; text-transform:uppercase;">DATA ANALYST & WEB DEVELOPER</span>
         </a>
       </div>
     </div>
@@ -1418,51 +1598,50 @@
           <div class="kinetic-strips-wrapper">
             <div class="kinetic-row kinetic-row-0" data-row="0">
               <div class="kinetic-track" data-direction="left" data-speed="28">
-                <div class="kinetic-group"><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span></div>
-                <div class="kinetic-group" aria-hidden="true"><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span></div>
+                <div class="kinetic-group"><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span></div>
+                <div class="kinetic-group" aria-hidden="true"><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span></div>
               </div>
             </div>
             <div class="kinetic-row kinetic-row-1" data-row="1">
               <div class="kinetic-track" data-direction="right" data-speed="20">
-                <div class="kinetic-group"><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span></div>
-                <div class="kinetic-group" aria-hidden="true"><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span></div>
+                <div class="kinetic-group"><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span></div>
+                <div class="kinetic-group" aria-hidden="true"><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span></div>
               </div>
             </div>
             <div class="kinetic-row kinetic-row-2" data-row="2">
               <div class="kinetic-track" data-direction="left" data-speed="32">
-                <div class="kinetic-group"><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span></div>
-                <div class="kinetic-group" aria-hidden="true"><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span></div>
+                <div class="kinetic-group"><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span></div>
+                <div class="kinetic-group" aria-hidden="true"><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span></div>
               </div>
             </div>
             <div class="kinetic-row kinetic-row-3" data-row="3">
               <div class="kinetic-track" data-direction="right" data-speed="18">
-                <div class="kinetic-group"><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span></div>
-                <div class="kinetic-group" aria-hidden="true"><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span></div>
+                <div class="kinetic-group"><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span></div>
+                <div class="kinetic-group" aria-hidden="true"><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span></div>
               </div>
             </div>
             <div class="kinetic-row kinetic-row-4" data-row="4">
               <div class="kinetic-track" data-direction="left" data-speed="24">
-                <div class="kinetic-group"><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span></div>
-                <div class="kinetic-group" aria-hidden="true"><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span></div>
+                <div class="kinetic-group"><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span></div>
+                <div class="kinetic-group" aria-hidden="true"><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span></div>
               </div>
             </div>
             <div class="kinetic-row kinetic-row-5" data-row="5">
               <div class="kinetic-track" data-direction="right" data-speed="22">
-                <div class="kinetic-group"><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span></div>
-                <div class="kinetic-group" aria-hidden="true"><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span></div>
+                <div class="kinetic-group"><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span></div>
+                <div class="kinetic-group" aria-hidden="true"><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span></div>
               </div>
             </div>
             <div class="kinetic-row kinetic-row-6" data-row="6">
               <div class="kinetic-track" data-direction="left" data-speed="26">
-                <div class="kinetic-group"><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span></div>
-                <div class="kinetic-group" aria-hidden="true"><span class="k-box">Docker</span><span class="k-accent"><img src="./assets/tech-icons/docker.png" alt="Docker" class="k-accent-img"></span><span class="k-box">Firebase</span><span class="k-accent"><img src="./assets/tech-icons/firebase.png" alt="Firebase" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.png" alt="JavaScript" class="k-accent-img"></span><span class="k-box">TypeScript</span><span class="k-accent"><img src="./assets/tech-icons/typescript.png" alt="TypeScript" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.png" alt="React.js" class="k-accent-img"></span><span class="k-box">Express.js</span><span class="k-accent"><img src="./assets/tech-icons/express.png" alt="Express.js" class="k-accent-img"></span><span class="k-box">Node.js</span><span class="k-accent"><img src="./assets/tech-icons/nodejs.png" alt="Node.js" class="k-accent-img"></span><span class="k-box">MongoDB</span><span class="k-accent"><img src="./assets/tech-icons/mongodb.png" alt="MongoDB" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.png" alt="Python" class="k-accent-img"></span><span class="k-box">Java</span><span class="k-accent"><img src="./assets/tech-icons/java.png" alt="Java" class="k-accent-img"></span><span class="k-box">Tailwind CSS</span><span class="k-accent"><img src="./assets/tech-icons/tailwindcss.png" alt="Tailwind CSS" class="k-accent-img"></span></div>
+                <div class="kinetic-group"><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span></div>
+                <div class="kinetic-group" aria-hidden="true"><span class="k-box">SQL</span><span class="k-accent"><img src="./assets/tech-icons/sql.svg" alt="SQL" class="k-accent-img"></span><span class="k-box">Pandas</span><span class="k-accent"><img src="./assets/tech-icons/pandas.svg" alt="Pandas" class="k-accent-img"></span><span class="k-box">Microsoft Excel</span><span class="k-accent"><img src="./assets/tech-icons/excel.svg" alt="Microsoft Excel" class="k-accent-img"></span><span class="k-box">NumPy</span><span class="k-accent"><img src="./assets/tech-icons/numpy.svg" alt="NumPy" class="k-accent-img"></span><span class="k-box">Data Visualization</span><span class="k-accent"><img src="./assets/tech-icons/dataviz.svg" alt="Data Visualization" class="k-accent-img"></span><span class="k-box">Matplotlib</span><span class="k-accent"><img src="./assets/tech-icons/matplotlib.svg" alt="Matplotlib" class="k-accent-img"></span><span class="k-box">MySQL</span><span class="k-accent"><img src="./assets/tech-icons/mysql.svg" alt="MySQL" class="k-accent-img"></span><span class="k-box">React.js</span><span class="k-accent"><img src="./assets/tech-icons/react.svg" alt="React.js" class="k-accent-img"></span><span class="k-box">JavaScript</span><span class="k-accent"><img src="./assets/tech-icons/javascript.svg" alt="JavaScript" class="k-accent-img"></span><span class="k-box">HTML5</span><span class="k-accent"><img src="./assets/tech-icons/html5.svg" alt="HTML5" class="k-accent-img"></span><span class="k-box">CSS3</span><span class="k-accent"><img src="./assets/tech-icons/css3.svg" alt="CSS3" class="k-accent-img"></span><span class="k-box">Git</span><span class="k-accent"><img src="./assets/tech-icons/git.svg" alt="Git" class="k-accent-img"></span><span class="k-box">GitHub</span><span class="k-accent"><img src="./assets/tech-icons/github.svg" alt="GitHub" class="k-accent-img"></span><span class="k-box">VS Code</span><span class="k-accent"><img src="./assets/tech-icons/vscode.svg" alt="VS Code" class="k-accent-img"></span><span class="k-box">Power BI</span><span class="k-accent"><img src="./assets/tech-icons/powerbi.svg" alt="Power BI" class="k-accent-img"></span><span class="k-box">Python</span><span class="k-accent"><img src="./assets/tech-icons/python.svg" alt="Python" class="k-accent-img"></span></div>
               </div>
             </div>
           </div>
         </div>
         <div class="comp">
-          <h1 data-hero="title" class="font-c hero-text"><span class="main-he-span">Turning Ideas into</span><span
-              class="main-he-span">Digital Experiences.</span></h1>
+          <h1 data-hero="title" class="font-c hero-text"><span class="main-he-span">TURNING DATA</span><span class="main-he-span">INTO INSIGHTS.</span></h1>
         </div>
         <div class="comp toggle-w"><svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="none"
             viewBox="0 0 1384 1012" data-hero="scribble" class="scribbles-svg">
@@ -1517,7 +1696,7 @@
             </span>
           </label></div>
         <div class="comp">
-          <div data-hero="par" class="par-base _w-ch">Engineering scalable digital systems, intelligent backends, and seamless user experiences. Bridging complex architecture with thoughtful frontend craftsmanship.</div>
+          <div data-hero="par" class="par-base _w-ch">Exploring the intersection of data analytics and web development, with a passion for transforming raw data into meaningful insights and building intuitive digital experiences. Skilled in data visualization, analytical thinking, and developing practical solutions through technology.</div>
         </div>
 
   </div>
@@ -1765,6 +1944,49 @@
           });
         };
 
+        
+          const heroPhrases = [
+            ["TURNING DATA", "INTO INSIGHTS."],
+            ["ANALYZING TRENDS.", "BUILDING SOLUTIONS."],
+            ["WHERE DATA", "MEETS DEVELOPMENT."]
+          ];
+          let currentPhraseIdx = 0;
+          let phraseTimer = null;
+
+          function startHeadlineRotation() {
+            if (phraseTimer) clearInterval(phraseTimer);
+            phraseTimer = setInterval(() => {
+              if (isKineticActive) return;
+              const nextIdx = (currentPhraseIdx + 1) % heroPhrases.length;
+              const nextPhrase = heroPhrases[nextIdx];
+              const spans = title ? title.querySelectorAll(".main-he-span") : null;
+              if (!spans || spans.length < 2) return;
+
+              const currentChars = (titleSplit ? titleSplit.flat() : []).filter(Boolean);
+              gsap.to(currentChars, {
+                yPercent: 115,
+                duration: 0.45,
+                stagger: { each: 0.008, from: "start" },
+                ease: "power2.in",
+                onComplete: () => {
+                  spans[0].textContent = nextPhrase[0];
+                  spans[1].textContent = nextPhrase[1];
+                  currentPhraseIdx = nextIdx;
+
+                  titleSplit = split(title.children, "chars");
+                  const newChars = (titleSplit.flat() || []).filter(Boolean);
+                  gsap.set(newChars, { yPercent: -115 });
+                  gsap.to(newChars, {
+                    yPercent: 0,
+                    duration: 0.65,
+                    stagger: { each: 0.01, from: "end" },
+                    ease: "expo.out"
+                  });
+                }
+              });
+            }, 4400);
+          }
+
         /** -- Lifecycle Listener */
         addEventListener("GSAPReady", (event) => {
           const wrapper = document.querySelector("[data-module='hero']");
@@ -1810,6 +2032,9 @@
                 each: 0.01,
                 from: "end",
               },
+              onComplete: () => {
+                startHeadlineRotation();
+              }
             });
           }
 
@@ -2154,123 +2379,115 @@
         </div>
 
         <ul data-flip="item" role="list" class="flip-list-w list w-list-unstyled">
-          <li>
+          <!-- PROJECT 1: CLUEZY -->
+          <li class="flip-project-li">
             <div class="flip-card-container">
 
-              <!-- Main Image Box -->
-              <div class="flip-item">
+              <!-- Main Image Box (Clickable directly to live site) -->
+              <div class="flip-item" onclick="window.open('https://cluezy-frontend.vercel.app/', '_blank')" title="Open CLUEZY Live Demo">
                 <div class="flip-project-frame">
-                  <img src="./Project Images/Portfolio Website.png" loading="eager" alt="Portfolio Website" class="flip-project-img">
+                  <img src="./Project Images/CLUEZY.png" loading="eager" alt="CLUEZY — AI-Powered Technical Problem Solving Platform" class="flip-project-img">
                 </div>
               </div>
 
-              <!-- Right side Blue Visit Site button from behind image -->
-              <a href="https://jishnumondal.vercel.app/" target="_blank" rel="noopener noreferrer" class="flip-visit-btn">
-                <span>Visit Site</span>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
+              <!-- Action Buttons (Pop out from behind image on hover) -->
+              <div class="flip-actions-w">
+                <a href="https://cluezy-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" class="flip-visit-btn" title="Visit Live Application">
+                  <span>Visit Site</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://github.com/aditi714/CLUEZY" target="_blank" rel="noopener noreferrer" class="flip-visit-btn flip-github-btn" title="View GitHub Repository">
+                  <span>GitHub</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project Details Card (from README) -->
+            <div class="flip-desc-card">
+              <div class="flip-desc-header">
+                <div class="flip-desc-title-group">
+                  <h3 class="flip-desc-title">CLUEZY</h3>
+                  <span class="flip-desc-badge">AI Troubleshooter</span>
+                </div>
+                <div class="flip-desc-links">
+                  <a href="https://cluezy-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" class="flip-mini-link live">
+                    <span>Live App</span>
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  </a>
+                  <a href="https://github.com/aditi714/CLUEZY" target="_blank" rel="noopener noreferrer" class="flip-mini-link github">
+                    <span>Source</span>
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="flip-desc-text">
+                An intelligent conversational troubleshooting assistant that helps users diagnose and resolve complex technical problems step by step. Rather than making speculative guesses, CLUEZY systematically analyzes issues, establishes confirmed evidence, prioritizes candidate causes, guides users through targeted verification checks, and walks through verified solutions.
+              </p>
+              <div class="flip-tech-tags">
+                <span class="flip-tech-tag">Python</span>
+                <span class="flip-tech-tag">FastAPI</span>
+                <span class="flip-tech-tag">JavaScript</span>
+                <span class="flip-tech-tag">REST API</span>
+                <span class="flip-tech-tag">AI / LLM</span>
+                <span class="flip-tech-tag">Vercel</span>
+              </div>
             </div>
           </li>
-          <li>
+
+          <!-- PROJECT 2: AGRORENT -->
+          <li class="flip-project-li">
             <div class="flip-card-container">
 
-              <!-- Main Image Box -->
-              <div class="flip-item is-2">
+              <!-- Main Image Box (Clickable directly to live site) -->
+              <div class="flip-item is-2" onclick="window.open('https://agrorent-v3.onrender.com/', '_blank')" title="Open AgroRent Live Demo">
                 <div class="flip-project-frame">
-                  <img src="./Project Images/Cafe Website.png" loading="eager" alt="Cafe Website" class="flip-project-img">
+                  <img src="./Project Images/AgroRent.jpg" loading="eager" alt="AgroRent — Farm Machinery Rental Platform" class="flip-project-img">
                 </div>
               </div>
 
-              <!-- Right side Blue Visit Site button from behind image -->
-              <a href="https://mochaandmiso.web.app/" target="_blank" rel="noopener noreferrer" class="flip-visit-btn">
-                <span>Visit Site</span>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
+              <!-- Action Buttons (Pop out from behind image on hover) -->
+              <div class="flip-actions-w">
+                <a href="https://agrorent-v3.onrender.com/" target="_blank" rel="noopener noreferrer" class="flip-visit-btn" title="Visit Live Application">
+                  <span>Visit Site</span>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://github.com/ParthMahadik33/AgroRent-v3" target="_blank" rel="noopener noreferrer" class="flip-visit-btn flip-github-btn" title="View GitHub Repository">
+                  <span>GitHub</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
             </div>
-          </li>
-          <li>
-            <div class="flip-card-container">
 
-              <!-- Main Image Box -->
-              <div class="flip-item is-3">
-                <div class="flip-project-frame">
-                  <img src="./Project Images/Design Studio.png" loading="eager" alt="Design Studio" class="flip-project-img">
+            <!-- Project Details Card (from README) -->
+            <div class="flip-desc-card">
+              <div class="flip-desc-header">
+                <div class="flip-desc-title-group">
+                  <h3 class="flip-desc-title">AgroRent</h3>
+                  <span class="flip-desc-badge award">AgriTech Platform</span>
+                </div>
+                <div class="flip-desc-links">
+                  <a href="https://agrorent-v3.onrender.com/" target="_blank" rel="noopener noreferrer" class="flip-mini-link live">
+                    <span>Live App</span>
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  </a>
+                  <a href="https://github.com/ParthMahadik33/AgroRent-v3" target="_blank" rel="noopener noreferrer" class="flip-mini-link github">
+                    <span>Source</span>
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
                 </div>
               </div>
-
-              <!-- Right side Blue Visit Site button from behind image -->
-              <a href="https://echo-design-studio-ex.vercel.app/" target="_blank" rel="noopener noreferrer" class="flip-visit-btn">
-                <span>Visit Site</span>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="flip-card-container">
-
-              <!-- Main Image Box -->
-              <div class="flip-item is-4">
-                <div class="flip-project-frame">
-                  <img src="./Project Images/Photographer Portfolio.png" loading="eager" alt="Photographer Portfolio" class="flip-project-img">
-                </div>
+              <p class="flip-desc-text">
+                Two-sided farm machinery rental marketplace connecting farmers with equipment owners through a transparent, multilingual digital platform. Features AI machinery condition verification, a WhatsApp-first booking bot (no app download required), and automated payments with Razorpay.
+              </p>
+              <div class="flip-tech-tags">
+                <span class="flip-tech-tag">Python</span>
+                <span class="flip-tech-tag">Flask</span>
+                <span class="flip-tech-tag">Gemini AI</span>
+                <span class="flip-tech-tag">WhatsApp API</span>
+                <span class="flip-tech-tag">Razorpay</span>
+                <span class="flip-tech-tag">Render</span>
               </div>
-
-              <!-- Right side Blue Visit Site button from behind image -->
-              <a href="https://julianvance.vercel.app/" target="_blank" rel="noopener noreferrer" class="flip-visit-btn">
-                <span>Visit Site</span>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="flip-card-container">
-
-              <!-- Main Image Box -->
-              <div class="flip-item is-5">
-                <div class="flip-project-frame">
-                  <img src="./Project Images/Portfolio Design.png" loading="eager" alt="Portfolio Design" class="flip-project-img">
-                </div>
-              </div>
-
-              <!-- Right side Blue Visit Site button from behind image -->
-              <a href="https://echooo.web.app/" target="_blank" rel="noopener noreferrer" class="flip-visit-btn">
-                <span>Visit Site</span>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="flip-card-container">
-
-              <!-- Main Image Box -->
-              <div class="flip-item is-6">
-                <div class="flip-project-frame">
-                  <img src="./Project Images/ICHHA Brand.png" loading="eager" alt="ICHHA Brand" class="flip-project-img">
-                </div>
-              </div>
-
-              <!-- Right side Blue Visit Site button from behind image -->
-              <a href="https://ichha-shakya.web.app/" target="_blank" rel="noopener noreferrer" class="flip-visit-btn">
-                <span>Visit Site</span>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="flip-card-container">
-
-              <!-- Main Image Box -->
-              <div class="flip-item is-7">
-                <div class="flip-project-frame">
-                  <img src="./Project Images/Robin Sebastian.png" loading="eager" alt="Robin Sebastian Portfolio" class="flip-project-img">
-                </div>
-              </div>
-
-              <!-- Right side Blue Visit Site button from behind image -->
-              <a href="https://sencruzo.web.app/" target="_blank" rel="noopener noreferrer" class="flip-visit-btn">
-                <span>Visit Site</span>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
             </div>
           </li>
         </ul>
@@ -2350,6 +2567,7 @@
               const container = li.querySelector(".flip-card-container");
               const item = li.querySelector(".flip-item");
               const imgEl = li.querySelector(".flip-project-img");
+              const descCard = li.querySelector(".flip-desc-card");
               const isLeft = (index % 2 === 0);
               const direction = isLeft ? -1 : 1;
 
@@ -2399,6 +2617,26 @@
                       duration: 1,
                     },
                     0
+                  );
+                }
+
+                // Smooth reveal for description card
+                if (descCard) {
+                  flyTl.fromTo(
+                    descCard,
+                    {
+                      opacity: 0,
+                      y: 35,
+                      scale: 0.94,
+                    },
+                    {
+                      opacity: 1,
+                      y: 0,
+                      scale: 1,
+                      ease: "power2.out",
+                      duration: 0.75,
+                    },
+                    0.25
                   );
                 }
               }
@@ -2467,12 +2705,12 @@
                     <text x="18" y="48" font-size="13" font-weight="950" fill="#000000" font-family="sans-serif">BEGINNING</text>
                   </svg>
                   <div class="j-card" style="padding: 0.35rem 0.65rem; margin-top: -6px; font-size: 0.78rem; border-radius: 8px;">
-                    Where the journey started.
+                    Where curiosity began.
                   </div>
                 </div>
               </div>
 
-              <!-- 2. SCHOOL / EDUCATION (2023 — 2024) -->
+              <!-- 2. FOUNDATIONS -->
               <div id="m2-school" class="j-milestone" style="left: 13.5%; top: 63%;">
                 <div style="display: flex; flex-direction: column; align-items: flex-start; max-width: 255px;">
                   <div style="display: flex; align-items: flex-end; gap: 0.5rem; margin-bottom: -8px; z-index: 2;">
@@ -2491,22 +2729,22 @@
                       <path d="M 56 -3 L 64 0 L 56 3 Z" fill="#ef4444" stroke="#000000" stroke-width="1.5" />
                     </svg>
                     <div style="display: flex; align-items: center;">
-                      <div class="j-badge-yellow" style="transform: rotate(2deg);">2023 — 2024</div>
+                      <div class="j-badge-yellow" style="transform: rotate(2deg);">FOUNDATIONS</div>
                     </div>
                   </div>
                   <div class="j-card" style="width: 100%;">
                     <ul class="j-list">
-                      <li>Built my first websites.</li>
-                      <li>Discovered my love for tech.</li>
-                      <li>Started exploring programming.</li>
+                      <li>Discovered my passion for tech & problem-solving.</li>
+                      <li>Started exploring programming logic & computing concepts.</li>
+                      <li>Sparked the vision to build impactful digital solutions.</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <!-- 3. SECOND EDUCATION / DEVELOPMENT (2024 — 2026) -->
+              <!-- 3. DATA & WEB DEV (2024 — PRESENT) -->
               <div id="m3-class12" class="j-milestone" style="left: 37.5%; top: 61%;">
-                <div style="display: flex; flex-direction: column; align-items: flex-start; max-width: 275px;">
+                <div style="display: flex; flex-direction: column; align-items: flex-start; max-width: 285px;">
                   <div style="display: flex; align-items: flex-end; gap: 0.5rem; margin-bottom: -6px; z-index: 2;">
                     <svg class="sticker-illus" width="76" height="58" viewBox="0 0 76 58" fill="none">
                       <path d="M 8 44 L 62 38 L 70 48 L 16 54 Z" fill="#06b6d4" stroke="#000000" stroke-width="2.5" />
@@ -2517,23 +2755,22 @@
                       <rect x="21" y="19" width="48" height="5" fill="#ffffff" stroke="#000000" stroke-width="2" />
                     </svg>
                     <div style="display: flex; align-items: center; gap: 6px;">
-                      <div class="j-badge-yellow" style="transform: rotate(-1.5deg);">2024 — 2026</div>
-                      <div class="j-badge-pink">50+ PROJECTS</div>
+                      <div class="j-badge-yellow" style="transform: rotate(-1.5deg);">2024 — PRESENT</div>
+                      <div class="j-badge-pink">DATA &amp; DEV</div>
                     </div>
                   </div>
                   <div class="j-card" style="width: 100%; padding: 0.55rem 0.85rem;">
                     <ul class="j-list" style="gap: 0.22rem; margin-top: 0.2rem;">
-                      <li style="font-size: clamp(0.68rem, 0.78vw, 0.84rem); line-height: 1.25;">Started delivering freelance web development projects to clients.</li>
-                      <li style="font-size: clamp(0.68rem, 0.78vw, 0.84rem); line-height: 1.25;">Successfully delivered 50+ freelance projects.</li>
-                      <li style="font-size: clamp(0.68rem, 0.78vw, 0.84rem); line-height: 1.25;">Started contributing to open-source projects.</li>
-                      <li style="font-size: clamp(0.68rem, 0.78vw, 0.84rem); line-height: 1.25;">Built small personal projects and experiments.</li>
-                      <li style="font-size: clamp(0.68rem, 0.78vw, 0.84rem); line-height: 1.25;">Learned and expanded my full-stack technology stack.</li>
+                      <li style="font-size: clamp(0.68rem, 0.78vw, 0.84rem); line-height: 1.25;">Dived deep into Data Analytics (Power BI, SQL, Python, Excel).</li>
+                      <li style="font-size: clamp(0.68rem, 0.78vw, 0.84rem); line-height: 1.25;">Developed passion for turning raw data into meaningful insights.</li>
+                      <li style="font-size: clamp(0.68rem, 0.78vw, 0.84rem); line-height: 1.25;">Built interactive dashboards and data visualization reports.</li>
+                      <li style="font-size: clamp(0.68rem, 0.78vw, 0.84rem); line-height: 1.25;">Expanding modern web development (JavaScript, React).</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <!-- 4. COLLEGE (MSIT Kolkata, 2024-2028) -->
+              <!-- 4. COLLEGE (KBP College Vashi, 2024-2027) -->
               <div id="m4-college" class="j-milestone" style="left: 64%; top: 55%;">
                 <div style="display: flex; flex-direction: column; align-items: flex-start; max-width: 295px;">
                   <div style="display: flex; align-items: flex-end; gap: 0.5rem; margin-bottom: -10px; z-index: 2;">
@@ -2552,21 +2789,21 @@
                     </svg>
                     <div style="display: flex; flex-direction: column; gap: 4px;">
                       <div class="j-badge-yellow" style="transform: rotate(2deg);">COLLEGE</div>
-                      <div class="j-badge-white" style="font-size: 0.72rem;">B.Tech CSE (IoT) • MSIT, Kolkata</div>
-                      <div class="j-badge-pink" style="align-self: flex-start;">2024 – 2028</div>
+                      <div class="j-badge-white" style="font-size: 0.72rem;">B.Sc. Computer Science • KBP College, Vashi</div>
+                      <div class="j-badge-pink" style="align-self: flex-start;">2024 – 2027</div>
                     </div>
                   </div>
                   <div class="j-card" style="width: 100%;">
                     <ul class="j-list">
-                      <li>Exploring Full-Stack, Cybersecurity & IoT</li>
-                      <li>Building real-world and security-focused projects</li>
-                      <li><strong>CGPA: 7.4 / 10.0</strong></li>
+                      <li>Pursuing B.Sc. in Computer Science (2024 to present).</li>
+                      <li>Core study: DBMS, Computer Networks, Operating Systems &amp; DSA.</li>
+                      <li><strong>Graduating Class of 2027 (Final Year 2027)</strong>.</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <!-- 5. PROJECTS (Laptop, Vexore, Sage, JobMap) -->
+              <!-- 5. KEY PROJECTS -->
               <div id="m5-projects" class="j-milestone" style="left: 20%; top: 38%;">
                 <div style="display: flex; flex-direction: column; align-items: flex-start; max-width: 290px;">
                   <div style="display: flex; align-items: flex-end; gap: 0.5rem; margin-bottom: -6px; z-index: 2;">
@@ -2576,44 +2813,44 @@
                       <path d="M 6 42 L 68 42 L 62 52 L 12 52 Z" fill="#e2e8f0" stroke="#000000" stroke-width="3" />
                       <line x1="28" y1="46" x2="46" y2="46" stroke="#000000" stroke-width="2.5" stroke-linecap="round" />
                     </svg>
-                    <div class="j-badge-yellow" style="transform: rotate(-2deg);">PROJECTS</div>
+                    <div class="j-badge-yellow" style="transform: rotate(-2deg);">KEY PROJECTS</div>
                   </div>
                   <div class="j-card" style="width: 100%;">
                     <ul class="j-list checks">
-                      <li><span class="check-box">✔</span> <span><strong>Vexore</strong> — SaaS Security Auditor</span></li>
-                      <li><span class="check-box">✔</span> <span><strong>Project SAGE</strong> — AI-Powered EDR</span></li>
-                      <li><span class="check-box">✔</span> <span><strong>KolkataJobMap</strong> — Job Discovery Platform</span></li>
+                      <li><span class="check-box">✔</span> <span><strong>CLUEZY</strong> — AI Technical Troubleshooting Assistant</span></li>
+                      <li><span class="check-box">✔</span> <span><strong>AgroRent</strong> — Farm Machinery Rental Platform</span></li>
+                      <li><span class="check-box">✔</span> <span><strong>Data Dashboards</strong> — Power BI &amp; SQL Analytics</span></li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <!-- 6. CREATOR & BUILDER (@echo__builds) -->
+              <!-- 6. CONNECT & CODE (GitHub & LinkedIn) -->
               <div id="m6-creator" class="j-milestone" style="left: 61%; top: 32%;">
-                <div style="display: flex; flex-direction: column; align-items: flex-start; max-width: 258px;">
+                <div style="display: flex; flex-direction: column; align-items: flex-start; max-width: 268px;">
                   <div style="display: flex; align-items: flex-end; gap: 0.5rem; margin-bottom: -6px; z-index: 2;">
                     <svg class="sticker-illus" width="66" height="52" viewBox="0 0 66 52" fill="none">
-                      <rect x="8" y="14" width="40" height="28" rx="6" fill="#f43f5e" stroke="#000000" stroke-width="3" />
-                      <path d="M 48 22 L 60 16 L 60 40 L 48 34 Z" fill="#f43f5e" stroke="#000000" stroke-width="2.5" />
+                      <rect x="8" y="14" width="40" height="28" rx="6" fill="#0284c7" stroke="#000000" stroke-width="3" />
+                      <path d="M 48 22 L 60 16 L 60 40 L 48 34 Z" fill="#0284c7" stroke="#000000" stroke-width="2.5" />
                       <circle cx="28" cy="28" r="9" fill="#000000" />
                       <polygon points="26,23 33,28 26,33" fill="#ffffff" />
                       <rect x="14" y="8" width="12" height="6" rx="2" fill="#ffffff" stroke="#000000" stroke-width="2" />
                     </svg>
-                    <div class="j-badge-yellow" style="transform: rotate(2deg);">CREATOR & BUILDER</div>
+                    <div class="j-badge-yellow" style="transform: rotate(2deg);">CONNECT &amp; CODE</div>
                   </div>
                   <div class="j-card" style="width: 100%;">
                     <ul class="j-list">
-                      <li><strong>@echo__builds</strong> (5.5K+ followers)</li>
-                      <li>Share tech, security & AI content</li>
-                      <li>Freelance web development</li>
+                      <li><a href="https://github.com/aditi714" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none;"><strong>GitHub</strong>: github.com/aditi714 ↗</a></li>
+                      <li><a href="https://www.linkedin.com/in/aditi-raut-735292380" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none;"><strong>LinkedIn</strong>: Aditi Raut ↗</a></li>
+                      <li>Open for collaboration &amp; data discussions</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <!-- 7. STARTUP JOURNEY (Vexore) -->
+              <!-- 7. CURRENT FOCUS (Seeking Internship) -->
               <div id="m7-startup" class="j-milestone" style="left: 31%; top: 16%;">
-                <div style="display: flex; flex-direction: column; align-items: flex-start; max-width: 275px;">
+                <div style="display: flex; flex-direction: column; align-items: flex-start; max-width: 285px;">
                   <div style="display: flex; align-items: flex-end; gap: 0.5rem; margin-bottom: -8px; z-index: 2;">
                     <svg class="sticker-illus" width="76" height="76" viewBox="0 0 76 76" fill="none">
                       <path d="M 22 52 Q 10 65, 18 72 Q 28 66, 32 58 Z" fill="#f59e0b" stroke="#000000" stroke-width="2" />
@@ -2625,14 +2862,14 @@
                       <path d="M 40 64 L 46 72 L 48 64 Z" fill="#ef4444" stroke="#000000" stroke-width="2" />
                     </svg>
                     <div style="display: flex; align-items: center; gap: 4px;">
-                      <div class="j-badge-yellow" style="transform: rotate(-1.5deg);">STARTUP JOURNEY</div>
-                      <div class="j-badge-pink">Vexore</div>
+                      <div class="j-badge-yellow" style="transform: rotate(-1.5deg);">CURRENT FOCUS</div>
+                      <div class="j-badge-pink">SEEKING INTERNSHIP</div>
                     </div>
                   </div>
                   <div class="j-card" style="width: 100%;">
                     <ul class="j-list checks">
-                      <li><span class="check-box dark">✔</span> <span>Building a security product for AI-built apps</span></li>
-                      <li><span class="check-box dark">✔</span> <span>Automating vulnerability checks, RLS audits & pen-testing</span></li>
+                      <li><span class="check-box dark">✔</span> <span><strong>Actively looking for Internship opportunities</strong> in Data Analytics &amp; Web Development</span></li>
+                      <li><span class="check-box dark">✔</span> <span>Applying analytical thinking to real-world datasets &amp; building useful tools</span></li>
                     </ul>
                   </div>
                 </div>
@@ -2655,10 +2892,10 @@
                   </div>
                   <div class="j-card" style="width: 100%;">
                     <ul class="j-list checks">
-                      <li><span class="check-box green">✔</span> <span>Build Vexore into a global security platform</span></li>
-                      <li><span class="check-box green">✔</span> <span>Work in Application Security (AppSec)</span></li>
-                      <li><span class="check-box green">✔</span> <span>Contribute to open-source & security research</span></li>
-                      <li><span class="check-box green">✔</span> <span>Build products that make the web safer</span></li>
+                      <li><span class="check-box green">✔</span> <span>Empower teams with data-backed insights &amp; BI solutions</span></li>
+                      <li><span class="check-box green">✔</span> <span>Build scalable web applications that solve practical problems</span></li>
+                      <li><span class="check-box green">✔</span> <span>Continuously master new analytics, AI, and development tools</span></li>
+                      <li><span class="check-box green">✔</span> <span>Bridge the gap where data meets development</span></li>
                     </ul>
                   </div>
                 </div>
@@ -3399,7 +3636,7 @@
               <!-- ROW 1 -->
               <div class="services-row-top">
                 
-                <!-- CARD 1: Website Development -->
+                <!-- CARD 1: Data Analytics & BI Dashboards -->
                 <div class="service-card" data-card="1">
                   <div class="service-icon-box">
                     <svg width="84" height="74" viewBox="0 0 84 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3407,24 +3644,26 @@
                       <ellipse cx="22" cy="11" rx="2.8" ry="7" transform="rotate(-35 22 11)" fill="#FF5575" stroke="#080808" stroke-width="2"/>
                       <ellipse cx="35" cy="7" rx="2.8" ry="7" transform="rotate(-5 35 7)" fill="#FF5575" stroke="#080808" stroke-width="2"/>
                       <ellipse cx="48" cy="9" rx="2.8" ry="7" transform="rotate(25 48 9)" fill="#FF5575" stroke="#080808" stroke-width="2"/>
-                      <!-- Laptop -->
+                      <!-- Laptop with Dashboard Chart -->
                       <rect x="12" y="18" width="60" height="40" rx="7" fill="#FFFDF9" stroke="#080808" stroke-width="2.8"/>
-                      <rect x="18" y="23" width="48" height="30" rx="5" fill="#13BCE5" stroke="#080808" stroke-width="2"/>
-                      <!-- </> in White -->
-                      <path d="M34 33 L28 38 L34 43" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M39 45 L44 31" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
-                      <path d="M49 33 L55 38 L49 43" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      <rect x="18" y="23" width="48" height="30" rx="5" fill="#080808" stroke="#080808" stroke-width="1.8"/>
+                      <!-- Mini Dashboard Charts in Yellow / Cyan / Coral -->
+                      <rect x="23" y="38" width="6" height="11" rx="1.5" fill="#FF5575" stroke="#080808" stroke-width="1.2"/>
+                      <rect x="32" y="32" width="6" height="17" rx="1.5" fill="#FFE500" stroke="#080808" stroke-width="1.2"/>
+                      <rect x="41" y="27" width="6" height="22" rx="1.5" fill="#13BCE5" stroke="#080808" stroke-width="1.2"/>
+                      <path d="M26 36 L35 30 L44 26 L55 31" stroke="#FFFDF9" stroke-width="1.8" stroke-linecap="round"/>
+                      <circle cx="55" cy="31" r="2.2" fill="#FFE500"/>
                       <!-- Base -->
                       <path d="M6 58 L78 58 L72 68 L12 68 Z" fill="#FFFDF9" stroke="#080808" stroke-width="2.8" stroke-linejoin="round"/>
                     </svg>
                   </div>
                   <div class="service-content-box">
-                    <div class="service-title-pill">Website Development</div>
-                    <p class="service-desc">Build modern, responsive, and high-performance websites tailored to your brand and goals.</p>
+                    <div class="service-title-pill">Data Analytics &amp; BI Dashboards</div>
+                    <p class="service-desc">Building interactive Power BI dashboards, KPI tracking, and visual reports that turn raw data into actionable insights.</p>
                   </div>
                 </div>
 
-                <!-- CARD 2: Full-Stack Development -->
+                <!-- CARD 2: SQL & Database Querying -->
                 <div class="service-card" data-card="2">
                   <div class="service-icon-box">
                     <svg width="84" height="74" viewBox="0 0 84 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3432,21 +3671,19 @@
                       <ellipse cx="26" cy="11" rx="2.8" ry="7" transform="rotate(-30 26 11)" fill="#FFE500" stroke="#080808" stroke-width="2"/>
                       <ellipse cx="42" cy="7" rx="2.8" ry="7" fill="#FFE500" stroke="#080808" stroke-width="2"/>
                       <ellipse cx="58" cy="11" rx="2.8" ry="7" transform="rotate(30 58 11)" fill="#FFE500" stroke="#080808" stroke-width="2"/>
-                      <!-- Bottom Layer (Coral) -->
+                      <!-- Database Cylinder Stack (Coral, Yellow, Cyan) -->
                       <path d="M42 46 L70 57 L42 68 L14 57 Z" fill="#FF5575" stroke="#080808" stroke-width="2.6" stroke-linejoin="round"/>
-                      <!-- Middle Layer (Yellow) -->
                       <path d="M42 33 L70 44 L42 55 L14 44 Z" fill="#FFE500" stroke="#080808" stroke-width="2.6" stroke-linejoin="round"/>
-                      <!-- Top Layer (Cyan) -->
                       <path d="M42 20 L70 31 L42 42 L14 31 Z" fill="#13BCE5" stroke="#080808" stroke-width="2.6" stroke-linejoin="round"/>
                     </svg>
                   </div>
                   <div class="service-content-box">
-                    <div class="service-title-pill">Full-Stack Development</div>
-                    <p class="service-desc">End-to-end web applications with robust frontend, scalable backend, and real-world functionality.</p>
+                    <div class="service-title-pill">SQL &amp; Database Querying</div>
+                    <p class="service-desc">Writing efficient SQL queries, data modeling, database design (MySQL), and structuring complex business data.</p>
                   </div>
                 </div>
 
-                <!-- CARD 3: E-Commerce Solution -->
+                <!-- CARD 3: Exploratory Data Analysis -->
                 <div class="service-card" data-card="3">
                   <div class="service-icon-box">
                     <svg width="84" height="74" viewBox="0 0 84 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3454,21 +3691,22 @@
                       <ellipse cx="26" cy="11" rx="2.8" ry="7" transform="rotate(-30 26 11)" fill="#FF5575" stroke="#080808" stroke-width="2"/>
                       <ellipse cx="40" cy="7" rx="2.8" ry="7" fill="#FF5575" stroke="#080808" stroke-width="2"/>
                       <ellipse cx="54" cy="11" rx="2.8" ry="7" transform="rotate(30 54 11)" fill="#FF5575" stroke="#080808" stroke-width="2"/>
-                      <!-- Shopping Cart Handle & Frame -->
-                      <path d="M11 22 L22 22 L31 48 L68 48 L75 29 L25 29" stroke="#080808" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                      <!-- Yellow Basket Infill & Grid -->
-                      <path d="M25 29 L75 29 L68 48 L31 48 Z" fill="#FFE500" stroke="#080808" stroke-width="2.4" stroke-linejoin="round"/>
-                      <line x1="41" y1="29" x2="38" y2="48" stroke="#080808" stroke-width="2.2"/>
-                      <line x1="56" y1="29" x2="54" y2="48" stroke="#080808" stroke-width="2.2"/>
-                      <line x1="28" y1="38.5" x2="72" y2="38.5" stroke="#080808" stroke-width="2.2"/>
-                      <!-- Wheels -->
-                      <circle cx="36" cy="57" r="5" fill="#FF5575" stroke="#080808" stroke-width="2.4"/>
-                      <circle cx="62" cy="57" r="5" fill="#FF5575" stroke="#080808" stroke-width="2.4"/>
+                      <!-- Bar Chart Container & Bars -->
+                      <rect x="12" y="18" width="60" height="46" rx="8" fill="#FFFDF9" stroke="#080808" stroke-width="2.8"/>
+                      <!-- Bar 1 (Coral) -->
+                      <rect x="20" y="38" width="9" height="20" rx="2.5" fill="#FF5575" stroke="#080808" stroke-width="2"/>
+                      <!-- Bar 2 (Yellow) -->
+                      <rect x="33" y="28" width="9" height="30" rx="2.5" fill="#FFE500" stroke="#080808" stroke-width="2"/>
+                      <!-- Bar 3 (Cyan) -->
+                      <rect x="46" y="23" width="9" height="35" rx="2.5" fill="#13BCE5" stroke="#080808" stroke-width="2"/>
+                      <!-- Upward Trend Line -->
+                      <path d="M19 40 L32 29 L45 22 L62 25" stroke="#080808" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="62" cy="25" r="3.2" fill="#FFE500" stroke="#080808" stroke-width="1.8"/>
                     </svg>
                   </div>
                   <div class="service-content-box">
-                    <div class="service-title-pill">E-Commerce Solution</div>
-                    <p class="service-desc">Custom and scalable e-commerce websites with secure payments, product management, and smooth user experience.</p>
+                    <div class="service-title-pill">Exploratory Data Analysis</div>
+                    <p class="service-desc">Data cleaning, wrangling, statistical analysis, and trend visualization using Python, Pandas, NumPy, and Matplotlib.</p>
                   </div>
                 </div>
 
@@ -3477,7 +3715,7 @@
               <!-- ROW 2 (Centered 2 cards) -->
               <div class="services-row-bottom">
                 
-                <!-- CARD 4: UI/UX & Frontend Design -->
+                <!-- CARD 4: Responsive Web Development -->
                 <div class="service-card" data-card="4">
                   <div class="service-icon-box">
                     <svg width="84" height="74" viewBox="0 0 84 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3496,12 +3734,12 @@
                     </svg>
                   </div>
                   <div class="service-content-box">
-                    <div class="service-title-pill">UI/UX & Frontend Design</div>
-                    <p class="service-desc">Designing clean, user-friendly interfaces and building modern, responsive frontends that deliver great experiences.</p>
+                    <div class="service-title-pill">Responsive Web Development</div>
+                    <p class="service-desc">Developing clean, fast, and responsive web applications using HTML5, CSS3, JavaScript, and React.</p>
                   </div>
                 </div>
 
-                <!-- CARD 5: Maintenance & Support -->
+                <!-- CARD 5: Interactive Data Portals -->
                 <div class="service-card" data-card="5">
                   <div class="service-icon-box">
                     <svg width="84" height="74" viewBox="0 0 84 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3509,7 +3747,7 @@
                       <ellipse cx="26" cy="13" rx="2.8" ry="7" transform="rotate(-30 26 13)" fill="#FF5575" stroke="#080808" stroke-width="2"/>
                       <ellipse cx="40" cy="9" rx="2.8" ry="7" fill="#FF5575" stroke="#080808" stroke-width="2"/>
                       <ellipse cx="54" cy="13" rx="2.8" ry="7" transform="rotate(30 54 13)" fill="#FF5575" stroke="#080808" stroke-width="2"/>
-                      <!-- Browser Window -->
+                      <!-- Browser Window with Gear -->
                       <rect x="12" y="20" width="58" height="44" rx="7" fill="#FFFDF9" stroke="#080808" stroke-width="2.6"/>
                       <path d="M12 28 C12 23 16 20 20 20 L62 20 C66 20 70 23 70 28 L70 32 L12 32 Z" fill="#13BCE5" stroke="#080808" stroke-width="2.2"/>
                       <circle cx="19" cy="26" r="2" fill="#FFFDF9"/>
@@ -3523,8 +3761,8 @@
                     </svg>
                   </div>
                   <div class="service-content-box">
-                    <div class="service-title-pill">Maintenance & Support</div>
-                    <p class="service-desc">Keep your website secure, updated, and running smoothly with reliable, ongoing support.</p>
+                    <div class="service-title-pill">Interactive Data Portals</div>
+                    <p class="service-desc">Connecting data and web development — creating web-based reporting tools, embeddable charts, and intuitive user experiences.</p>
                   </div>
                 </div>
 
@@ -3756,54 +3994,13 @@
         </div>
       </div>
 
-      <!-- 4 SOCIAL MEDIA CARDS -->
+            <!-- 4 SOCIAL MEDIA CARDS -->
       <div class="social-cards-list" style="display: flex; flex-direction: column; gap: 13px;">
         
-        <!-- CARD 1: INSTAGRAM -->
-        <a href="https://instagram.com/echo__builds" target="_blank" rel="noopener noreferrer" class="social-neo-card" style="transform: rotate(-1.5deg); text-decoration: none;">
+        <!-- CARD 1: LINKEDIN -->
+        <a href="https://www.linkedin.com/in/aditi-raut-735292380" target="_blank" rel="noopener noreferrer" class="social-neo-card" style="transform: rotate(-1.5deg); text-decoration: none;">
           <div class="social-card-inner" style="background: #FFF9EF; border: 2.5px solid #080808; box-shadow: 4px 4px 0px #080808; border-radius: 14px; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);">
             <div style="display: flex; align-items: center; gap: 12px;">
-              <!-- Instagram Icon -->
-              <div style="width: 42px; height: 42px; border-radius: 11px; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
-              </div>
-              <div>
-                <div style="font-family: 'Work Sans', sans-serif; font-size: 15px; font-weight: 800; color: #080808; line-height: 1.2;">Instagram</div>
-                <div style="font-family: 'Work Sans', sans-serif; font-size: 12px; color: rgba(8, 8, 8, 0.65); line-height: 1.2;">@echo__builds</div>
-              </div>
-            </div>
-            <svg class="social-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#080808" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-          </div>
-        </a>
-
-        <!-- CARD 2: X (TWITTER) -->
-        <a href="https://x.com/jishnu09_siuu" target="_blank" rel="noopener noreferrer" class="social-neo-card" style="transform: rotate(1deg); text-decoration: none;">
-          <div class="social-card-inner" style="background: #FFF9EF; border: 2.5px solid #080808; box-shadow: 4px 4px 0px #080808; border-radius: 14px; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);">
-            <div style="display: flex; align-items: center; gap: 12px;">
-              <!-- X Logo -->
-              <div style="width: 42px; height: 42px; border-radius: 11px; background: #080808; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="#ffffff">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                </svg>
-              </div>
-              <div>
-                <div style="font-family: 'Work Sans', sans-serif; font-size: 15px; font-weight: 800; color: #080808; line-height: 1.2;">X (Twitter)</div>
-                <div style="font-family: 'Work Sans', sans-serif; font-size: 12px; color: rgba(8, 8, 8, 0.65); line-height: 1.2;">@jishnu09_siuu</div>
-              </div>
-            </div>
-            <svg class="social-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#080808" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-          </div>
-        </a>
-
-        <!-- CARD 3: LINKEDIN -->
-        <a href="https://linkedin.com/in/jishnu-mondal" target="_blank" rel="noopener noreferrer" class="social-neo-card" style="transform: rotate(-1deg); text-decoration: none;">
-          <div class="social-card-inner" style="background: #FFF9EF; border: 2.5px solid #080808; box-shadow: 4px 4px 0px #080808; border-radius: 14px; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);">
-            <div style="display: flex; align-items: center; gap: 12px;">
-              <!-- LinkedIn Logo -->
               <div style="width: 42px; height: 42px; border-radius: 11px; background: #0A66C2; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="#ffffff">
                   <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
@@ -3811,18 +4008,17 @@
               </div>
               <div>
                 <div style="font-family: 'Work Sans', sans-serif; font-size: 15px; font-weight: 800; color: #080808; line-height: 1.2;">LinkedIn</div>
-                <div style="font-family: 'Work Sans', sans-serif; font-size: 12px; color: rgba(8, 8, 8, 0.65); line-height: 1.2;">/in/jishnu-mondal</div>
+                <div style="font-family: 'Work Sans', sans-serif; font-size: 12px; color: rgba(8, 8, 8, 0.65); line-height: 1.2;">/in/aditi-raut-735292380</div>
               </div>
             </div>
             <svg class="social-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#080808" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
           </div>
         </a>
 
-        <!-- CARD 4: GITHUB -->
-        <a href="https://github.com/Jishnu09-siuu" target="_blank" rel="noopener noreferrer" class="social-neo-card" style="transform: rotate(1.5deg); text-decoration: none;">
+        <!-- CARD 2: GITHUB -->
+        <a href="https://github.com/aditi714" target="_blank" rel="noopener noreferrer" class="social-neo-card" style="transform: rotate(1deg); text-decoration: none;">
           <div class="social-card-inner" style="background: #FFF9EF; border: 2.5px solid #080808; box-shadow: 4px 4px 0px #080808; border-radius: 14px; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);">
             <div style="display: flex; align-items: center; gap: 12px;">
-              <!-- GitHub Logo -->
               <div style="width: 42px; height: 42px; border-radius: 11px; background: #080808; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                 <svg width="23" height="23" viewBox="0 0 24 24" fill="#ffffff">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
@@ -3830,12 +4026,50 @@
               </div>
               <div>
                 <div style="font-family: 'Work Sans', sans-serif; font-size: 15px; font-weight: 800; color: #080808; line-height: 1.2;">GitHub</div>
-                <div style="font-family: 'Work Sans', sans-serif; font-size: 12px; color: rgba(8, 8, 8, 0.65); line-height: 1.2;">/Jishnu09-siuu</div>
+                <div style="font-family: 'Work Sans', sans-serif; font-size: 12px; color: rgba(8, 8, 8, 0.65); line-height: 1.2;">@aditi714</div>
               </div>
             </div>
             <svg class="social-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#080808" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
           </div>
         </a>
+
+        <!-- CARD 3: EMAIL -->
+        <a href="mailto:aditi.raut.dev@gmail.com" class="social-neo-card" style="transform: rotate(-1deg); text-decoration: none;">
+          <div class="social-card-inner" style="background: #FFF9EF; border: 2.5px solid #080808; box-shadow: 4px 4px 0px #080808; border-radius: 14px; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 42px; height: 42px; border-radius: 11px; background: #EA4335; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div style="font-family: 'Work Sans', sans-serif; font-size: 15px; font-weight: 800; color: #080808; line-height: 1.2;">Email</div>
+                <div style="font-family: 'Work Sans', sans-serif; font-size: 12px; color: rgba(8, 8, 8, 0.65); line-height: 1.2;">aditi.raut.dev@gmail.com</div>
+              </div>
+            </div>
+            <svg class="social-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#080808" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </div>
+        </a>
+
+        <!-- CARD 4: LOCATION -->
+        <div class="social-neo-card" style="transform: rotate(1.5deg); text-decoration: none; cursor: default;">
+          <div class="social-card-inner" style="background: #FFF9EF; border: 2.5px solid #080808; box-shadow: 4px 4px 0px #080808; border-radius: 14px; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 42px; height: 42px; border-radius: 11px; background: #22c55e; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div style="font-family: 'Work Sans', sans-serif; font-size: 15px; font-weight: 800; color: #080808; line-height: 1.2;">Location</div>
+                <div style="font-family: 'Work Sans', sans-serif; font-size: 12px; color: rgba(8, 8, 8, 0.65); line-height: 1.2;">Navi Mumbai, Mumbai &amp; Remote</div>
+              </div>
+            </div>
+            <span style="font-size: 18px;">📍</span>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -3908,14 +4142,14 @@
 
       <!-- COLLABORATION HIGHLIGHTS PANEL -->
       <div class="collab-panel-wrap" style="width: 100%; transform: rotate(-1deg); transform-origin: center;">
-        <div style="background: #FFF9EF; border: 2.5px solid #080808; box-shadow: 5px 5px 0px #080808; border-radius: 14px; padding: 16px 18px; display: flex; flex-direction: column; gap: 12px;">
+                <div style="background: #FFF9EF; border: 2.5px solid #080808; box-shadow: 5px 5px 0px #080808; border-radius: 14px; padding: 16px 18px; display: flex; flex-direction: column; gap: 12px;">
           
           <!-- Item 1 -->
           <div style="display: flex; align-items: center; gap: 12px;">
             <div style="width: 22px; height: 22px; border-radius: 6px; background: #22c55e; border: 2px solid #080808; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#080808" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </div>
-            <span style="font-family: 'Work Sans', sans-serif; font-size: 14px; font-weight: 700; color: #080808;">Work Together</span>
+            <span style="font-family: 'Work Sans', sans-serif; font-size: 14px; font-weight: 700; color: #080808;">Data Analytics Internships</span>
           </div>
 
           <!-- Item 2 -->
@@ -3923,7 +4157,7 @@
             <div style="width: 22px; height: 22px; border-radius: 6px; background: #22c55e; border: 2px solid #080808; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#080808" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </div>
-            <span style="font-family: 'Work Sans', sans-serif; font-size: 14px; font-weight: 700; color: #080808;">Project Collaboration</span>
+            <span style="font-family: 'Work Sans', sans-serif; font-size: 14px; font-weight: 700; color: #080808;">Web Development Projects</span>
           </div>
 
           <!-- Item 3 -->
@@ -3931,7 +4165,7 @@
             <div style="width: 22px; height: 22px; border-radius: 6px; background: #22c55e; border: 2px solid #080808; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#080808" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </div>
-            <span style="font-family: 'Work Sans', sans-serif; font-size: 14px; font-weight: 700; color: #080808;">Freelance Opportunities</span>
+            <span style="font-family: 'Work Sans', sans-serif; font-size: 14px; font-weight: 700; color: #080808;">Navi Mumbai / Remote Available</span>
           </div>
 
         </div>
@@ -4215,21 +4449,13 @@
     <div class="comp footer">
       <div class="footer-line">
         <div class="col-half">
-          <ul role="list" class="sub-nav-w w-list-unstyled">
-            <li><a href="https://gsap-webflow-offbrand.webflow.io/#flip"
-                class="link-li-w footer w-inline-block w--current">
-                <div>Stack</div>
-              </a></li>
-            <li><a href="https://gsap-webflow-offbrand.webflow.io/#inertia" class="link-li-w footer w-inline-block">
-                <div>Experience</div>
-              </a></li>
-            <li><a href="https://gsap-webflow-offbrand.webflow.io/#scrolltrigger"
-                class="link-li-w footer w-inline-block">
-                <div>Architecture</div>
-              </a></li>
-            <li><a href="https://gsap-webflow-offbrand.webflow.io/#slider" class="link-li-w footer w-inline-block">
-                <div>Projects</div>
-              </a></li>
+                    <ul role="list" class="sub-nav-w w-list-unstyled">
+            <li><a href="#hero" class="link-li-w footer w-inline-block"><div>Home</div></a></li>
+            <li><a href="#flip" class="link-li-w footer w-inline-block"><div>Projects</div></a></li>
+            <li><a href="#scrolltrigger" class="link-li-w footer w-inline-block"><div>Journey</div></a></li>
+            <li><a href="#services" class="link-li-w footer w-inline-block"><div>Services</div></a></li>
+            <li><a href="#contact" class="link-li-w footer w-inline-block"><div>Contact</div></a></li>
+            <li><a href="resume.html" class="link-li-w footer w-inline-block"><div>Resume</div></a></li>
           </ul>
         </div>
         <div class="col-half items-r">
@@ -4238,11 +4464,11 @@
       </div>
     </div>
     <div class="footer-tagline-w" style="width: 100%; text-align: center; padding: 2.2rem 1.5rem 0.25rem 1.5rem;">
-      <p style="font-family: 'Work Sans', sans-serif; font-size: clamp(15px, 1.35vw, 20px); font-weight: 600; letter-spacing: 0.02em; color: var(--secondary, #ffe9cf); opacity: 0.9; margin: 0;">Turning complex ideas into scalable, end-to-end web applications.</p>
+      <p style="font-family: 'Work Sans', sans-serif; font-size: clamp(15px, 1.35vw, 20px); font-weight: 600; letter-spacing: 0.02em; color: var(--secondary, #ffe9cf); opacity: 0.9; margin: 0;">Turning raw data into meaningful insights &amp; building intuitive web experiences.</p>
     </div>
     <div data-animate="footerlogo" class="comp footer-logo" style="width: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden; padding-top: 1.5rem; padding-bottom: 1.5rem;">
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1426 220" style="width: 100%; height: auto; display: block;">
-        <text x="50%" y="62%" dominant-baseline="middle" text-anchor="middle" fill="currentColor" font-family="'Anton', Impact, Arial, sans-serif" font-size="195" font-weight="900" letter-spacing="0.04em">JISHNU MONDAL</text>
+        <text x="50%" y="62%" dominant-baseline="middle" text-anchor="middle" fill="currentColor" font-family="'Anton', Impact, Arial, sans-serif" font-size="195" font-weight="900" letter-spacing="0.04em">ADITI RAUT</text>
       </svg>
     </div>
     <div class="code-block w-embed w-script">
@@ -4376,35 +4602,39 @@
                   const secId = parentSec ? parentSec.id : "";
 
                   if (secId === "flip") {
-                    copyContent = `JISHNU MONDAL // FULL STACK TECH STACK
-Frontend: React 19, Next.js 15, TypeScript, Tailwind, GSAP, WebGL
-Backend: Node.js, Express, Go, Python (FastAPI), REST, GraphQL, gRPC
-Databases: PostgreSQL, Redis, MongoDB, Prisma ORM, Kafka
-DevOps: Docker, Kubernetes, AWS, Terraform, GitHub Actions
-Contact: jishnu.mondal.dev@gmail.com`;
+                    copyContent = `ADITI RAUT // SELECTED PROJECTS
+1. CLUEZY — AI-Powered Technical Problem Solving Platform
+   Live Demo: https://cluezy-frontend.vercel.app/
+   GitHub: https://github.com/aditi714/CLUEZY
+   Tech: Python, FastAPI, JavaScript, AI / LLM, REST API, Vercel
+
+2. AgroRent — AI-Powered Farm Machinery Rental Platform
+   Live Demo: https://agrorent-v3.onrender.com/
+   GitHub: https://github.com/ParthMahadik33/AgroRent-v3
+   Tech: Python, Flask, Gemini AI, WhatsApp API, Razorpay, Render
+   
+Portfolio: Aditi Raut — Data Analyst & Web Developer`;
                   } else if (secId === "scrolltrigger") {
-                    copyContent = `SYSTEM ARCHITECTURE BLUEPRINT
-Throughput: 100k+ events/sec | P99 Latency: <50ms | Uptime: 99.99%
-Architecture: Microservices + Event Sourcing (Kafka) + Edge Invalidation
-Security: Zero-Trust OAuth 2.0 / JWT + Cloudflare WAF
-Architect: Jishnu Mondal (jishnu.mondal.dev@gmail.com)`;
+                    copyContent = `ADITI RAUT // CAREER & EDUCATION ROADMAP
+Education: B.Sc. Computer Science • KBP College, Vashi (2024 — 2027)
+Focus: Data Analytics & Web Development (Power BI, SQL, Python, JavaScript, React)
+Current Status: Actively seeking Internship opportunities
+Profiles: GitHub (github.com/aditi714) | LinkedIn (linkedin.com/in/aditi-raut-735292380)
+Portfolio: Aditi Raut — Data Analyst & Web Developer`;
                   } else if (secId === "slider") {
-                    copyContent = `FEATURED FULL STACK PROJECTS — JISHNU MONDAL
-1. Nexus AI Platform (Next.js 15, FastAPI, LangChain, PostgreSQL)
-2. Pulse Telemetry (React, Go, ClickHouse, WebSockets)
-3. DevFlow Cloud IDE (TypeScript, Docker, Kubernetes)
-4. HyperSync DB (Rust WASM, IndexedDB, CRDTs)
-5. Aether Commerce (Next.js, GraphQL, Stripe, Redis)
-Portfolio: https://jishnumondal.dev`;
+                    copyContent = `ADITI RAUT // CORE SERVICES & EXPERTISE
+1. Data Analytics & BI Dashboards (Power BI, KPI Tracking, Visual Reports)
+2. SQL & Database Querying (MySQL, Data Modeling, Complex Queries)
+3. Exploratory Data Analysis (Python, Pandas, NumPy, Matplotlib)
+4. Responsive Web Development (HTML5, CSS3, JavaScript, React)
+5. Interactive Data Portals (Web Dashboards, Embeddable Charts)
+Connect: linkedin.com/in/aditi-raut-735292380 | github.com/aditi714`;
                   } else if (secId === "inertia") {
-                    copyContent = `JISHNU MONDAL — SENIOR FULL STACK ARCHITECT
-Experience: 8+ years building enterprise cloud & high-traffic web applications
-Specialties: Distributed Systems, Next.js / React, Microservices, Cloud Infra
-Email: jishnu.mondal.dev@gmail.com | GitHub: github.com/jishnumondal-dev`;
+                    copyContent = `ADITI RAUT — DATA ANALYST & WEB DEVELOPER\nEducation: B.Sc. Computer Science • KBP College, Vashi (2024 — 2027)\nSkills: Power BI, SQL, Python, Excel, React, JavaScript\nStatus: Seeking Internship (Navi Mumbai / Remote)\nGitHub: github.com/aditi714 | LinkedIn: linkedin.com/in/aditi-raut-735292380`;
                   } else if (secId === "marquee") {
-                    copyContent = "FULL STACK TOOLKIT: TypeScript, Next.js, React, Node.js, Python, Go, Docker, Kubernetes, AWS, PostgreSQL, Redis, Kafka, GSAP, Tailwind CSS.";
+                    copyContent = "TOOLKIT: Power BI, Microsoft Excel, SQL, Python, Pandas, NumPy, Matplotlib, Data Visualization, MySQL, HTML5, CSS3, JavaScript, React.js, Git, GitHub, VS Code.";
                   } else {
-                    copyContent = "Jishnu Mondal — Full Stack Developer & Architect (jishnu.mondal.dev@gmail.com)";
+                    copyContent = "Aditi Raut — Data Analyst & Web Developer (aditi.raut.dev@gmail.com)";
                   }
 
                   if (navigator.clipboard && navigator.clipboard.writeText) {
